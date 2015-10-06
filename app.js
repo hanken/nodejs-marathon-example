@@ -7,7 +7,7 @@ var server = http.createServer(function (request, response) {
   var hostname = os.hostname();
   response.writeHead(200, {"Content-Type": "text/plain"});
   
-  response.end("Hello World - " + hostname);
+  response.end("Hello World 2 - " + hostname);
 });
  
 // Listen on port 8000, IP defaults to "0.0.0.0"
