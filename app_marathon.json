@@ -1,5 +1,5 @@
 {
-  "id": "nodejs_app",
+  "id": "nodejs-app",
   "container": {
     "type": "DOCKER",
     "docker": {
@@ -19,7 +19,7 @@
         "HTTP_PORT_IDX_0_NAME": "test"
     },
   "env": {
-    "SERVICE_NAME": "nodejs_app",
+    "SERVICE_NAME": "nodejs-app",
     "SERVICE_TAGS": "v1"
   },
   "healthChecks": [
