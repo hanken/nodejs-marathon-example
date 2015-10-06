@@ -34,7 +34,7 @@
     }
   ],
   "cpus": 0.1,
-  "mem": 64.0,
+  "mem": 128.0,
   "instances": 2,
   "upgradeStrategy": {
     "minimumHealthCapacity": 1,
