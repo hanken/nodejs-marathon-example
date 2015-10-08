@@ -1,10 +1,12 @@
-FROM node:latest
+FROM gliderlabs/alpine
 
-WORKDIR /app
-ADD package.json /app/
-RUN npm install
-ADD . /app
+MAINTAINER Graham Taylor <graham.x.taylor@capgemini.com>
 
-EXPOSE 8000
-CMD []
-ENTRYPOINT ["/nodejs/bin/npm", "start"]
+RUN apk --update add nodejs
+
+# Install app dependencies
+COPY . /app
+RUN cd /app && npm install
+
+EXPOSE  8000
+CMD ["node", "/app/app.js"]
